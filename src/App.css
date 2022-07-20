@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,114 @@
   to {
     transform: rotate(360deg);
   }
+}
+.spinner{
+  display: flex;
+  justify-content: center;
+  margin-top: +15%;
+}
+
+.base{
+  display: flex;
+  justify-content: space-around;
+  padding-top:15% ;
+}
+
+.title{
+  color: red;
+  font-family: 'Gulzar', serif;
+  font-size: 5em;
+  
+}
+
+.nav {
+  background-color: #f7f0e8;
+  height: auto; }
+
+.nav__logo {
+  font-size: 5em;
+  font-weight: 900;
+  text-decoration: none;
+  color: #414141; }
+
+.nav__logo:hover{
+  color: #414141;
+}
+
+.nav__menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em; }
+
+.nav__item {
+  margin-top: 35px;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #3d1e00;
+  font-family: 'PT Serif', serif;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%); }
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 70%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path .3s; }
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: #3d1e00;
+}
+
+.titulo{
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+.subTitulo{
+  font-family: 'Anton', sans-serif;
+  color: #414141;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.botonera{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.botonera button{
+  color: black;
+  background-color: orange;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+.botonera button:hover{
+  cursor: pointer;
+}
+
+.botonera p{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5em;
+}
+.card{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.carga{
+  text-align: center;
 }
